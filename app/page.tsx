@@ -65,7 +65,7 @@ export default function Home() {
         </section>
 
         <div className="footer-third-section">
-            <p>© 2025 PokeSnipe</p>
+            <p>© 2025 PokeSnipe made by Rilxee</p>
         </div>
 
     </footer>
