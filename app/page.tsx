@@ -6,7 +6,7 @@ export default function Home() {
     <div>
         <div id="news">Annonces ou Informations sur la vente en ligne !</div>
     <header>
-        <div class="header-div-first-class-part-img">
+        <div className="header-div-first-class-part-img">
             {/* <img src="../assets/output (2).jpg" alt="PokeSnipe"> */}
         </div>
 
@@ -17,7 +17,7 @@ export default function Home() {
                     <li><a href="#d">text</a></li>
                     <li><a href="#d">À propos</a></li>
                 </ul>
-                <div class="nav-logo">
+                <div className="nav-logo">
                     {/* <img src="../assets/search-svgrepo-com.svg" alt="search something"> */}
                     {/* <img src="../assets/account-svgrepo-com (1).svg" alt="login or sign up"> */}
                     {/* <img src="../assets/buy-svgrepo-com.svg" alt="your shopping cart"> */}
@@ -45,13 +45,13 @@ export default function Home() {
 
     <footer>
 
-        <div class="footer-first-section">
+        <div className="footer-first-section">
             <div>
                 <p>Contact</p>
             </div>
         </div>
 
-        <section class="footer-second-section">
+        <section className="footer-second-section">
 
             <div>
                 <h4>Nous suivre</h4>
@@ -64,7 +64,7 @@ export default function Home() {
 
         </section>
 
-        <div class="footer-third-section">
+        <div className="footer-third-section">
             <p>© 2025 PokeSnipe</p>
         </div>
 
