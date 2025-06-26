@@ -5,22 +5,270 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-family: "Baloo 2", sans-serif;
+    background-color: #F9FAFB;
+    color: #000;
+    overflow-x:hidden;
+}
+
+#news {
+    text-align: center;
+    background-color: #F9FAFB;
+    padding: 1em;
+    font-family: "Baloo 2";
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #0F172A;
+    font-family: "Baloo 2";
+}
+
+.nav-illus {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 2%;
+    flex: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-shrink: 2;
+    list-style: none;
+    gap: 3em;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffdd1b;
+    text-decoration: none;
+}
+
+.header-div-first-class-part-img {
+    padding: 1.2em;
+    padding-left: 2%;
+}
+
+.header-div-first-class-part-img img {
+    width: 100px;
+    height: auto;
+    border-radius: 120%;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 1.3em;
+    height: 1.53em;
+    margin-left: 2em;
+}
+
+.nav-logo img:hover {
+    filter: brightness(0) saturate(100%) invert(72%) sepia(83%) saturate(749%) hue-rotate(4deg) brightness(102%) contrast(101%);
+    transition: filter 0.3s ease-in
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAFB;
+    min-height: 73vh;
+    padding: 2em;
+}
+
+#first-section-theme-list-choices {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3em;
+    gap: 1em;
+}
+
+#first-section-theme-list-choices div#first-div-choice-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    /* background-image: url("../assets/giorgio-trovato-scWhKf1ltv4-unsplash.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5%;
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.529);
+    background-blend-mode: darken;
+}
+
+#first-section-theme-list-choices div#second-div-choice-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    /* background-image: url("../assets/mick-haupt-KtTF68ZjBak-unsplash.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.529);
+    background-blend-mode: darken;
+}
+
+#first-section-theme-list-choices div#third-div-choice-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    /* background-image: url("../assets/Screenshot\ 2025-05-22\ 173010.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    background-position-x: center ;
+    background-position-y: 25%;
+    padding: 5%;
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.529);
+    background-blend-mode: darken;
+}
+
+#first-section-theme-list-choices div#fourth-div-choice-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    /* background-image: url("../assets/Scelle.webp"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 60%;
+    background-position: center;
+    padding: 5%;
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.529);
+    background-blend-mode: darken;
+}
+
+#first-section-theme-list-choices div#fiveth-div-choice-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    /* background-image: url("../assets/visuels-bundle-6-boosters-pokemon-foudre-noire-flamme-blanche.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 95%;
+    background-position: center;
+    padding: 5%;
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.529);
+    background-blend-mode: darken;
+}
+
+#first-section-theme-list-choices div#sixth-div-choice-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    /* background-image: url("../assets/giorgio-trovato-scWhKf1ltv4-unsplash.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.529);
+    background-blend-mode: darken;
+}
+
+#first-section-theme-list-choices div#seventh-div-choice-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    /* background-image: url("../assets/giorgio-trovato-scWhKf1ltv4-unsplash.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.529);
+    background-blend-mode: darken;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: #0F172A;
+    color: white;
+    font-family: "Baloo 2";
+    font-size: 0.9rem;
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+    html {
+        width: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #news {
+        font-size: 0.8em;
+        max-width: 100%;
+        border: 1px solid #000000;
+    }
+
+    header {
+        display: none;
+        width: 100%;
+    }
+
+    nav ul {
+        width: 30%;
+    }
 }
