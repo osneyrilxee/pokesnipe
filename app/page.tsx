@@ -1,8 +1,8 @@
 import '../app/globals.css';
 
-
 export default function Home() {
   return (
+    
     <div>
         <div id="news">Annonces ou Informations sur la vente en ligne !</div>
     <header>
