@@ -18,7 +18,7 @@ export const metadata = {
   description: 'Exemple avec font automatique',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function Page() {
   return (
     <html lang="en">
       <body>
