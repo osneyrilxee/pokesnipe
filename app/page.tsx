@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.variable}>
+      <body>
             <div>
         <div id="news">Annonces ou Informations sur la vente en ligne !</div>
     <header>
