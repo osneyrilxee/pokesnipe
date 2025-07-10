@@ -7,6 +7,9 @@ import BuyItems from "./assets/buy-svgrepo-com.svg";
 import OnePieaceTcgBannerContainer from "./assets/one_pice_tcg.jpg"
 import YuGiOhTcgBannerContainer from "./assets/yu_gi-oh.png";
 import PokemonTcgBannerContainer from "./assets/pokemon.jpg";
+import path from "@/app/javascript/main/scripts";
+import "../app/javascript/main/main.js";
+import "../app/javascript/main/configs";
 
 const inter = Inter({
   subsets: ['latin'],

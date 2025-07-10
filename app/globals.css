@@ -123,8 +123,11 @@ main {
     background-image: url("./assets/pokemonc_cards.png");
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
     background-size: 130%;
     background-position: center;
+    height: 300px;
+    width: 725px;
     padding: 5%;
     font-size: 2em;
     color: white;
@@ -141,6 +144,9 @@ main {
     background-image: url("./assets/cards_looses_lots.png");
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
+    height: 300px;
+    width: 725px;
     padding: 5%;
     font-size: 2em;
     color: white;
@@ -157,6 +163,8 @@ main {
     background-image: url("./assets/grade_cards.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 300px;
+    width: 725px;
     background-size: 100%;
     background-position-x: center;
     background-position-y: 25%;
@@ -176,6 +184,8 @@ main {
     background-image: url("./assets/coffrets_produits_scelles0.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 300px;
+    width: 725px;
     background-size: 110%;
     background-position: center;
     font-size: 2em;
@@ -193,6 +203,8 @@ main {
     background-image: url("./assets/visuels-bundle-6-boosters-pokemon-foudre-noire-flamme-blanche.jpg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 300px;
+    width: 725px;
     background-size: 115%;
     background-position: center;
     padding: 5%;
@@ -211,6 +223,8 @@ main {
     background-image: url("./assets/accesories.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 300px;
+    width: 725px;
     padding: 5%;
     font-size: 2em;
     color: white;
@@ -227,6 +241,8 @@ main {
     background-image: url("./assets/giorgio-trovato-scWhKf1ltv4-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 300px;
+    width: 725px;
     padding: 5%;
     font-size: 2em;
     color: white;
@@ -271,3 +287,26 @@ footer {
 }
 
 /* 1811 got not adapted */
+
+@media screen and (max-width: 1811px) and (min-width: 823px){
+    section {
+        width: auto;
+    }
+
+    body {
+        width: auto;
+    }
+
+    .div-section-others-tcg {
+        display: flex;
+        gap: 2em;
+        justify-content: centert;
+        width: auto;
+        flex: 1;
+    }
+
+    .one-piece {
+        width: 50em;
+    }
+
+}
