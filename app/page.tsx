@@ -7,7 +7,6 @@ import BuyItems from "./assets/buy-svgrepo-com.svg";
 import OnePieaceTcgBannerContainer from "./assets/one_pice_tcg.jpg"
 import YuGiOhTcgBannerContainer from "./assets/yu_gi-oh.png";
 import PokemonTcgBannerContainer from "./assets/pokemon.jpg";
-import path from "@/app/javascript/main/scripts";
 import "../app/javascript/main/main.js";
 import "../app/javascript/main/configs";
 
@@ -17,8 +16,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'Mon Site',
-  description: 'Exemple avec font automatique',
+  title: 'Pokesnipe',
+  description: 'Website for selling pokemon cards',
 };
 
 export default function Page() {
@@ -42,6 +41,7 @@ export default function Page() {
                 <div className="nav-logo">
                     <Image src={SearchItems} width={24} height={24} alt="search something"/>
                     <Image src={AccountProfile} width={24} height={24} alt="login or sign up"/>
+                    <Image src={BuyItems} width={24} height={24}  alt="your shopping cart"/>
                     <Image src={BuyItems} width={24} height={24}  alt="your shopping cart"/>
                 </div>
             </nav>
@@ -77,7 +77,6 @@ export default function Page() {
 
 
     <footer>
-
         
 
         <div className="footer-third-section">

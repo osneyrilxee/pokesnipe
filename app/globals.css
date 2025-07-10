@@ -300,9 +300,8 @@ footer {
     .div-section-others-tcg {
         display: flex;
         gap: 2em;
-        justify-content: centert;
+        justify-content: center;
         width: auto;
-        flex: 1;
     }
 
     .one-piece {
