@@ -299,13 +299,35 @@ footer {
 
     .div-section-others-tcg {
         display: flex;
-        gap: 2em;
+        gap: 5em;
         justify-content: center;
         width: auto;
     }
+}
 
-    .one-piece {
-        width: 50em;
+@media screen and (max-width: 822px) and (min-width: 721px) {
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
     }
 
+    #first-section-theme-list-choices {
+        display: flex;
+    }
+
+    #first-section-theme-list-choices * {
+        border-radius: 50px;
+        width: 50%;
+    }
+
+    /* work on reponsive and developer edit the width on every div on the parent container of section navigation */
+
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        display: none;
+    }
 }

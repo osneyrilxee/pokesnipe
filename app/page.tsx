@@ -22,8 +22,6 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <html lang="en">
-      <body>
             <div>
         <div id="news">Annonces ou Informations sur la vente en ligne !</div>
     <header>
@@ -41,7 +39,6 @@ export default function Page() {
                 <div className="nav-logo">
                     <Image src={SearchItems} width={24} height={24} alt="search something"/>
                     <Image src={AccountProfile} width={24} height={24} alt="login or sign up"/>
-                    <Image src={BuyItems} width={24} height={24}  alt="your shopping cart"/>
                     <Image src={BuyItems} width={24} height={24}  alt="your shopping cart"/>
                 </div>
             </nav>
@@ -85,8 +82,6 @@ export default function Page() {
 
     </footer>
     </div>
-      </body>
-    </html>
   );
 }
 
