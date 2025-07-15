@@ -1,5 +1,6 @@
 import '../app/globals.css';
 import { Inter } from 'next/font/google';
+import logo from './assets/output-removebg-preview.png'
 import Image from 'next/image';
 import SearchItems from "./assets/search-svgrepo-com.svg"
 import AccountProfile from "./assets/account-svgrepo-com (1).svg"
@@ -26,14 +27,13 @@ export default function Page() {
         <div id="news">Annonces ou Informations sur la vente en ligne !</div>
     <header>
         <div className="header-div-first-class-part-img">
-            {/* <img src="../assets/output (2).jpg" alt="PokeSnipe"> */}
+            <Image src={logo} alt="" />
         </div>
 
-        <div className="nav-illus">
             <nav>
                 <ul>
                     <li><a href="#d">Accueil</a></li>
-                    <li><a href="#d">text</a></li>
+                    <li><a href="#d">Nos services</a></li>
                     <li><a href="#d">À propos</a></li>
                 </ul>
                 <div className="nav-logo">
@@ -43,16 +43,15 @@ export default function Page() {
                 </div>
             </nav>
 
-        </div>
     </header>
 
 
     <section id="first-section-theme-list-choices">
         <div id="first-div-choice-box">Cartes Pokémon</div>
-        <div id="second-div-choice-box">Cartes en Loose / Lots</div>
+        <div id="second-div-choice-box">Loose & Lots</div>
         <div id="third-div-choice-box">Cartes Gradées</div>
         <div id="fourth-div-choice-box">Coffrets & Produits scellés</div>
-        <div id="fiveth-div-choice-box">Séries / Extensions</div>
+        <div id="fiveth-div-choice-box">Séries & Extensions</div>
         <div id="sixth-div-choice-box">Accessoires</div>
 
         <div className="div-section-others-tcg">
@@ -69,7 +68,10 @@ export default function Page() {
     </section>
 
     <main>
-
+        <h1>MAIN CONTENT SOON APPEARS INTO PRESENTATION AND FEATURES</h1>
+        <div className="informations">
+            <h2>CONTENT WILL APPEAR SOON THANK YOU FOR YOUR UNDERSTANDING DEAR CLIENT. THANK YOU FOR YOUR LOYALITY</h2>
+        </div>
     </main>
 
 

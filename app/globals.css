@@ -1,294 +1,291 @@
 @import "tailwindcss";
 
 :root {
-  font-family: var(--font-inter), sans-serif;
+    font-family: var(--font-inter), sans-serif;
 }
 
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
-@media screen and (max-width: 2560px) {
+@media screen and (max-width: 2560px) and (min-width: 1920px) {
     * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
 
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: "Baloo 2", sans-serif;
-    background-color: #F9FAFB;
-    color: #000;
-    overflow-x:hidden;
-}
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: "Baloo 2", sans-serif;
+        background-color: #F9FAFB;
+        color: #000;
+        overflow-x: hidden;
+    }
 
-#news {
-    text-align: center;
-    background-color: #F9FAFB;
-    padding: 1em;
-}
+    #news {
+        text-align: center;
+        background-color: #F9FAFB;
+        padding: 1em;
+    }
 
-header {
-    display: flex;
-    align-items: center;
-    background-color: #0F172A;
-    padding: 1%;
-}
-
-.nav-illus {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    padding-right: 2%;
-    flex: 1;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-nav ul {
-    display: flex;
-    flex-shrink: 2;
-    list-style: none;
-    gap: 3em;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: #ffdd1b;
-    text-decoration: none;
-}
-
-.header-div-first-class-part-img {
-    padding: 1.2em;
-    padding-left: 2%;
-}
-
-.header-div-first-class-part-img img {
-    width: 100px;
-    height: auto;
-    border-radius: 120%;
-}
-
-.nav-logo {
-    display: flex;
-    align-items: center;
-}
-
-.nav-logo img {
-    width: 1.3em;
-    height: 1.53em;
-    margin-left: 2em;
-}
-
-.nav-logo img:hover {
-    filter: brightness(0) saturate(100%) invert(72%) sepia(83%) saturate(749%) hue-rotate(4deg) brightness(102%) contrast(101%);
-    transition: filter 0.3s ease-in
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    background-color: #F9FAFB;
-    min-height: 73vh;
-    padding: 2em;
-}
-
-#first-section-theme-list-choices {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 3em;
-    gap: 1em;
-}
-
-#first-section-theme-list-choices div#first-div-choice-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    background-image: url("./assets/pokemonc_cards.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    background-size: 130%;
-    background-position: center;
-    height: 300px;
-    width: 725px;
-    padding: 5%;
-    font-size: 2em;
-    color: white;
-    font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.529);
-    background-blend-mode: darken;
-}
-
-#first-section-theme-list-choices div#second-div-choice-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    background-image: url("./assets/cards_looses_lots.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    height: 300px;
-    width: 725px;
-    padding: 5%;
-    font-size: 2em;
-    color: white;
-    font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.529);
-    background-blend-mode: darken;
-}
-
-#first-section-theme-list-choices div#third-div-choice-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    background-image: url("./assets/grade_cards.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    width: 725px;
-    background-size: 100%;
-    background-position-x: center;
-    background-position-y: 25%;
-    padding: 5%;
-    font-size: 2em;
-    color: white;
-    font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.529);
-    background-blend-mode: darken;
-}
-
-#first-section-theme-list-choices div#fourth-div-choice-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    background-image: url("./assets/coffrets_produits_scelles0.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    width: 725px;
-    background-size: 110%;
-    background-position: center;
-    font-size: 2em;
-    color: white;
-    font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.529);
-    background-blend-mode: darken;
-}
-
-#first-section-theme-list-choices div#fiveth-div-choice-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    background-image: url("./assets/visuels-bundle-6-boosters-pokemon-foudre-noire-flamme-blanche.jpg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    width: 725px;
-    background-size: 115%;
-    background-position: center;
-    padding: 5%;
-    font-size: 2em;
-    color: white;
-    font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.529);
-    background-blend-mode: darken;
-}
-
-#first-section-theme-list-choices div#sixth-div-choice-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    background-image: url("./assets/accesories.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    width: 725px;
-    padding: 5%;
-    font-size: 2em;
-    color: white;
-    font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.529);
-    background-blend-mode: darken;
-}
-
-#first-section-theme-list-choices div#seventh-div-choice-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    background-image: url("./assets/giorgio-trovato-scWhKf1ltv4-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    width: 725px;
-    padding: 5%;
-    font-size: 2em;
-    color: white;
-    font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.529);
-    background-blend-mode: darken;
-}
-
-.div-section-others-tcg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10em;
-}
-
-.div-section-others-tcg div {
-    border-radius: 50px;
-    padding-top: 2.5%;
-    width: 15%;
-}
-
-.div-section-others-tcg div * {
-    border-radius: 50px;
-}
-
-main {
-    border: 1px solid black;
-}
-
-
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    background-color: #0F172A;
-    color: white;
-    font-size: 0.9rem;
-}
     header {
+        display: flex;
+        align-items: center;
+        background-color: #0F172A;
         padding: 1%;
+    }
+
+    .nav-illus {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding-right: 2%;
+        flex: 1;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-shrink: 2;
+        list-style: none;
+        gap: 3em;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        color: #ffdd1b;
+        text-decoration: none;
+    }
+
+    .header-div-first-class-part-img {
+        padding: 0 1.2em 0;
+        padding-left: 2%;
+
+    }
+
+    .header-div-first-class-part-img img {
+        width: 100px;
+        height: auto;
+        border-radius: 120%;
+    }
+
+    .nav-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-logo img {
+        width: 1.3em;
+        height: 1.53em;
+        margin-left: 2em;
+    }
+
+    .nav-logo img:hover {
+        filter: brightness(0) saturate(100%) invert(72%) sepia(83%) saturate(749%) hue-rotate(4deg) brightness(102%) contrast(101%);
+        transition: filter 0.3s ease-in
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        background-color: #F9FAFB;
+        min-height: 73vh;
+        padding: 2em;
+    }
+
+    #first-section-theme-list-choices {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 3em;
+        gap: 1em;
+    }
+
+    #first-section-theme-list-choices div#first-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        background-image: url("./assets/pokemon_cards.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-size: 130%;
+        background-position: center;
+        height: 300px;
+        width: 725px;
+        padding: 5%;
+        font-size: 2em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    #first-section-theme-list-choices div#second-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        background-image: url("./assets/cards_looses_lots.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        height: 300px;
+        width: 725px;
+        padding: 5%;
+        font-size: 2em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    #first-section-theme-list-choices div#third-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        background-image: url("./assets/grade_cards.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 725px;
+        background-size: 100%;
+        background-position-x: center;
+        background-position-y: 25%;
+        padding: 5%;
+        font-size: 2em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    #first-section-theme-list-choices div#fourth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        background-image: url("./assets/coffrets_produits_scelles.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 725px;
+        background-size: 110%;
+        background-position: center;
+        font-size: 2em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    #first-section-theme-list-choices div#fiveth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        background-image: url("./assets/visuels-bundle-6-boosters-pokemon-foudre-noire-flamme-blanche.jpg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 725px;
+        background-size: 115%;
+        background-position: center;
+        padding: 5%;
+        font-size: 2em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    #first-section-theme-list-choices div#sixth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        background-image: url("./assets/accesories.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 725px;
+        padding: 5%;
+        font-size: 2em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    #first-section-theme-list-choices div#seventh-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 725px;
+        padding: 5%;
+        font-size: 2em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .div-section-others-tcg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10em;
+    }
+
+    .div-section-others-tcg div {
+        border-radius: 50px;
+        padding-top: 2.5%;
+        width: 15%;
+    }
+
+    .div-section-others-tcg div * {
+        border-radius: 50px;
+    }
+
+    main {
+        border: 1px solid black;
+    }
+
+
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        background-color: #0F172A;
+        color: white;
+        font-size: 0.9rem;
     }
 }
 
 /* 1811 got not adapted */
 
-@media screen and (max-width: 1811px) and (min-width: 823px){
+@media screen and (max-width: 1811px) and (min-width: 823px) {
     section {
         width: auto;
     }
@@ -305,29 +302,303 @@ footer {
     }
 }
 
-@media screen and (max-width: 822px) and (min-width: 721px) {
+@media screen and (max-width: 822px) and (min-width: 752px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: "Baloo 2", sans-serif;
+        background-color: #F9FAFB;
+        color: #000;
+        overflow-x: hidden;
+    }
+
+    #news {
+        text-align: center;
+        background-color: #F9FAFB;
+        padding: 1em;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        background-color: #0F172A;
+        padding: 2%;
+    }
 
     nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        flex-direction: row;
         width: 100%;
+    }
+
+    nav ul {
+        display: flex; 
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        color: #ffdd1b;
+        text-decoration: none;
+    }
+
+    .header-div-first-class-part-img {
+        padding: 0 1.2em 0;
+        padding-left: 2%;
+
+    }
+
+    .header-div-first-class-part-img img {
+        width: 75px;
+        height: auto;
+        border-radius: 120%;
+    }
+
+    .nav-logo {
+        display: flex;
+        align-items: start;
+        padding-right: 2.5%;
+    }
+
+    .nav-logo img {
+        width: 1.3em;
+        height: 1.53em;
+        margin-left: 2em;
+    }
+
+    .nav-logo img:hover {
+        filter: brightness(0) saturate(100%) invert(72%) sepia(83%) saturate(749%) hue-rotate(4deg) brightness(102%) contrast(101%);
+        transition: filter 0.3s ease-in
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        text-align: center;
+        background-color: #3b3b3b;
+        min-height: 73vh;
+        padding: 2em;
     }
 
     #first-section-theme-list-choices {
         display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        padding: 3em;
+        gap: 1em;
+    }
+
+    #first-section-theme-list-choices {
+        display: flex;
+        justify-content: center;
     }
 
     #first-section-theme-list-choices * {
         border-radius: 50px;
-        width: 50%;
     }
 
+
+    #first-section-theme-list-choices div#first-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        background-image: url("./assets/pokemon_cards.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-size: 250%;
+        height: 300px;
+        background-size: 300%;
+        background-position: center;
+        width: 300px;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    #first-section-theme-list-choices div#first-div-choice-box:hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        background-image: url("./assets/pokemon_cards.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-size: 250%;
+        height: 300px;
+        background-size: 300%;
+        background-position: center;
+        width: 300px;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    #first-section-theme-list-choices div#second-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/cards_looses_lots.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        height: 300px;
+        width: 300px;
+        background-size: 200%;
+        background-position: center;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    #first-section-theme-list-choices div#third-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/grade_cards.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 300px;
+        background-size: 210%;
+        background-position: center;
+        background-position-x: 45%;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    #first-section-theme-list-choices div#fourth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/coffrets_produits_scelles.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 300px;
+        background-size: 250%;
+        background-position: center;
+        font-size: 1.4em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    #first-section-theme-list-choices div#fiveth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/visuels-bundle-6-boosters-pokemon-foudre-noire-flamme-blanche.jpg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 300px;
+        background-size: 225%;
+        background-position: center;
+        padding: 5%;
+        font-size: 1.4em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    #first-section-theme-list-choices div#sixth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/accesories.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-size: 200%;
+        height: 300px;
+        width: 300px;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .div-section-others-tcg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10em;
+    }
+
+    .div-section-others-tcg div {
+        border-radius: 50px;
+        padding-top: 2.5%;
+        width: 15%;
+    }
+
+    .div-section-others-tcg div * {
+        border-radius: 50px;
+    }
+
+    main {
+        border: 1px solid black;
+    }
+
+
+
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        background-color: #0F172A;
+        color: white;
+        font-size: 0.9rem;
+    }
     /* work on reponsive and developer edit the width on every div on the parent container of section navigation */
 
 }
 
-@media screen and (max-width: 720px) {
-    body {
+@media screen and (max-width: 752px) {
+
+
+
+    #news, header, section, footer, main h1 {
         display: none;
+    }
+
+    main {
+        margin-top: 50%;
+        text-align: center;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    body {
+        background-color: rgb(24, 24, 24)
     }
 }
