@@ -10,16 +10,12 @@ import YuGiOhTcgBannerContainer from "./assets/yu_gi-oh.png";
 import PokemonTcgBannerContainer from "./assets/pokemon.jpg";
 import "../app/javascript/main/main.js";
 import "../app/javascript/main/configs";
+import searchBar from "./assets/search-svgrepo-com.svg";
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 });
-
-export const metadata = {
-  title: 'Pokesnipe',
-  description: 'Website for selling pokemon cards',
-};
 
 export default function Page() {
   return (
@@ -45,9 +41,13 @@ export default function Page() {
 
     </header>
 
+    <section className="search-bar-section">
+        <strong>Pokesnipe</strong>
+    </section>
 
-    <section id="first-section-theme-list-choices">
-        <div id="first-div-choice-box">Cartes Pokémon</div>
+
+    <section className="first-section-theme-list-choices">
+        <div id="first-div-choice-box"><p>Cartes Pokémon</p></div>
         <div id="second-div-choice-box">Loose & Lots</div>
         <div id="third-div-choice-box">Cartes Gradées</div>
         <div id="fourth-div-choice-box">Coffrets & Produits scellés</div>

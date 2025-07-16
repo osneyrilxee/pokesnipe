@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,6 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
   title: "PokeSnipe",
   description: "Sell Pokemon cards online in the worldwide!",
@@ -19,6 +20,12 @@ export const metadata: Metadata = {
     icon: "/public/output-removebg-preview.png",
   },
 };
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 
 export default function RootLayout({
   children,
@@ -35,4 +42,3 @@ export default function RootLayout({
     </html>
   );
 }
-

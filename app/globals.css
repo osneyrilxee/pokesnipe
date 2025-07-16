@@ -108,7 +108,7 @@
         padding: 2em;
     }
 
-    #first-section-theme-list-choices {
+    .first-section-theme-list-choices {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -116,7 +116,7 @@
         gap: 1em;
     }
 
-    #first-section-theme-list-choices div#first-div-choice-box {
+    .first-section-theme-list-choices div#first-div-choice-box {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -137,7 +137,7 @@
         background-blend-mode: darken;
     }
 
-    #first-section-theme-list-choices div#second-div-choice-box {
+    .first-section-theme-list-choices div#second-div-choice-box {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -156,7 +156,7 @@
         background-blend-mode: darken;
     }
 
-    #first-section-theme-list-choices div#third-div-choice-box {
+    .first-section-theme-list-choices div#third-div-choice-box {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -177,7 +177,7 @@
         background-blend-mode: darken;
     }
 
-    #first-section-theme-list-choices div#fourth-div-choice-box {
+    .first-section-theme-list-choices div#fourth-div-choice-box {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -196,7 +196,7 @@
         background-blend-mode: darken;
     }
 
-    #first-section-theme-list-choices div#fiveth-div-choice-box {
+    .first-section-theme-list-choices div#fiveth-div-choice-box {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -216,7 +216,7 @@
         background-blend-mode: darken;
     }
 
-    #first-section-theme-list-choices div#sixth-div-choice-box {
+    .first-section-theme-list-choices div#sixth-div-choice-box {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -234,7 +234,7 @@
         background-blend-mode: darken;
     }
 
-    #first-section-theme-list-choices div#seventh-div-choice-box {
+    .first-section-theme-list-choices div#seventh-div-choice-box {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -285,7 +285,7 @@
 
 /* 1811 got not adapted */
 
-@media screen and (max-width: 1811px) and (min-width: 823px) {
+/* @media screen and (max-width: 1811px) and (min-width: 823px) {
     section {
         width: auto;
     }
@@ -300,9 +300,9 @@
         justify-content: center;
         width: auto;
     }
-}
+} */
 
-@media screen and (max-width: 822px) and (min-width: 752px) {
+@media screen and (max-width: 822px) and (min-width: 728px) {
 
     * {
         box-sizing: border-box;
@@ -368,6 +368,48 @@
         border-radius: 120%;
     }
 
+    /* search bar section for looking for an item */
+
+
+
+    .search-bar-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 35vh;
+        background-image: url("./assets/connor-dickson-A1I8g8NccNg-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        color: #ffffff;
+        font-size: 5em;    
+        filter: opacity(0.8);
+    }
+
+
+    .search-bar-section strong {
+        font-family: "Edu QLD Hand", cursive;
+    }
+
+    .search-bar-container {
+        border-radius: 50px;
+    }
+
+    .search-bar-section {
+        padding-top: 5%;
+    }
+
+    #container-input-search {
+        display: flex;
+        width: 5em;
+        border-radius: 5%;
+        color: #000000;
+        font-size: 50%;
+        height: 1em;
+    }
+
+    /* section choices section navigation */
+
     .nav-logo {
         display: flex;
         align-items: start;
@@ -385,42 +427,25 @@
         transition: filter 0.3s ease-in
     }
 
-    main {
-        display: flex;
-        flex-direction: column;
-        color: #ffffff;
-        text-align: center;
-        background-color: #3b3b3b;
-        min-height: 73vh;
-        padding: 2em;
-    }
-
-    #first-section-theme-list-choices {
-        display: flex;
-        justify-content: start;
-        flex-wrap: wrap;
-        padding: 3em;
-        gap: 1em;
-    }
-
-    #first-section-theme-list-choices {
+    .first-section-theme-list-choices {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        padding: 6em 3em;
+        gap: 2em;
     }
 
-    #first-section-theme-list-choices * {
+    .first-section-theme-list-choices * {
         border-radius: 50px;
     }
 
 
-    #first-section-theme-list-choices div#first-div-choice-box {
+    .first-section-theme-list-choices div#first-div-choice-box {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30%;
         background-image: url("./assets/pokemon_cards.png");
         background-repeat: no-repeat;
-        background-size: cover;
         object-fit: cover;
         background-size: 250%;
         height: 300px;
@@ -434,34 +459,12 @@
         background-blend-mode: darken;
     }
 
-    #first-section-theme-list-choices div#first-div-choice-box:hover {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30%;
-        background-image: url("./assets/pokemon_cards.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        object-fit: cover;
-        background-size: 250%;
-        height: 300px;
-        background-size: 300%;
-        background-position: center;
-        width: 300px;
-        font-size: 1.5em;
-        color: white;
-        font-weight: 600;
-        background-color: rgba(0, 0, 0, 0.529);
-        background-blend-mode: darken;
-    }
-
-    #first-section-theme-list-choices div#second-div-choice-box {
+    .first-section-theme-list-choices div#second-div-choice-box {
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: url("./assets/cards_looses_lots.png");
         background-repeat: no-repeat;
-        background-size: cover;
         object-fit: cover;
         height: 300px;
         width: 300px;
@@ -474,13 +477,12 @@
         background-blend-mode: darken;
     }
 
-    #first-section-theme-list-choices div#third-div-choice-box {
+    .first-section-theme-list-choices div#third-div-choice-box {
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: url("./assets/grade_cards.png");
         background-repeat: no-repeat;
-        background-size: cover;
         height: 300px;
         width: 300px;
         background-size: 210%;
@@ -493,13 +495,12 @@
         background-blend-mode: darken;
     }
 
-    #first-section-theme-list-choices div#fourth-div-choice-box {
+    .first-section-theme-list-choices div#fourth-div-choice-box {
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: url("./assets/coffrets_produits_scelles.png");
         background-repeat: no-repeat;
-        background-size: cover;
         height: 300px;
         width: 300px;
         background-size: 250%;
@@ -511,13 +512,12 @@
         background-blend-mode: darken;
     }
 
-    #first-section-theme-list-choices div#fiveth-div-choice-box {
+    .first-section-theme-list-choices div#fiveth-div-choice-box {
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: url("./assets/visuels-bundle-6-boosters-pokemon-foudre-noire-flamme-blanche.jpg.png");
         background-repeat: no-repeat;
-        background-size: cover;
         height: 300px;
         width: 300px;
         background-size: 225%;
@@ -530,13 +530,12 @@
         background-blend-mode: darken;
     }
 
-    #first-section-theme-list-choices div#sixth-div-choice-box {
+    .first-section-theme-list-choices div#sixth-div-choice-box {
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: url("./assets/accesories.png");
         background-repeat: no-repeat;
-        background-size: cover;
         background-position: center;
         background-size: 200%;
         height: 300px;
@@ -550,26 +549,37 @@
 
     .div-section-others-tcg {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        gap: 10em;
     }
 
     .div-section-others-tcg div {
         border-radius: 50px;
-        padding-top: 2.5%;
-        width: 15%;
+        padding-top: 10%;
+        width: 24%;
     }
 
     .div-section-others-tcg div * {
         border-radius: 50px;
     }
 
-    main {
-        border: 1px solid black;
+    .search-bar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: #ffffff;
     }
 
-
+    main {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        text-align: center;
+        background-color: #3b3b3b;
+        min-height: 73vh;
+        padding: 2em;
+    }
 
     footer {
         display: flex;
@@ -583,22 +593,1094 @@
 
 }
 
-@media screen and (max-width: 752px) {
+@media screen and (max-width: 727px) and (min-width: 645px) {
 
 
 
-    #news, header, section, footer, main h1 {
-        display: none;
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: "Baloo 2", sans-serif;
+        background-color: #F9FAFB;
+        color: #000;
+        overflow-x: hidden;
+    }
+
+    #news {
+        text-align: center;
+        background-color: #F9FAFB;
+        padding: 1em;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        background-color: #0F172A;
+        padding: 2%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex; 
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        color: #ffdd1b;
+        text-decoration: none;
+    }
+
+    .header-div-first-class-part-img {
+        padding: 0 1.2em 0;
+        padding-left: 2%;
+
+    }
+
+    .header-div-first-class-part-img img {
+        width: 75px;
+        height: auto;
+        border-radius: 120%;
+    }
+
+    /* search bar section for looking for an item */
+
+    .search-bar-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 25vh;
+        background-image: url("./assets/connor-dickson-A1I8g8NccNg-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        background-position-y: 65%;
+        color: #ffffff;
+        font-size: 3.5em;    
+        filter: opacity(0.8);
+    }
+
+
+    .search-bar-section strong {
+        font-family: "Edu QLD Hand", cursive;
+        padding-top: 4.5%;
+    }
+
+    #container-input-search {
+        display: flex;
+        width: 5em;
+        border-radius: 5%;
+        color: #000000;
+        font-size: 50%;
+        height: 1em;
+    }
+
+    /* section choices section navigation */
+
+    .nav-logo {
+        display: flex;
+        align-items: start;
+        padding-right: 2.5%;
+    }
+
+    .nav-logo img {
+        width: 1.3em;
+        height: 1.53em;
+        margin-left: 2em;
+    }
+
+    .nav-logo img:hover {
+        filter: brightness(0) saturate(100%) invert(72%) sepia(83%) saturate(749%) hue-rotate(4deg) brightness(102%) contrast(101%);
+        transition: filter 0.3s ease-in
+    }
+
+    .first-section-theme-list-choices {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 3em;
+        gap: 2em;
+    }
+
+    .first-section-theme-list-choices * {
+        border-radius: 50px;
+    }
+
+
+    .first-section-theme-list-choices div#first-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/pokemon_cards.png");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height: 200px;
+        background-size: 140%;
+        background-position: center;
+        width: 500px;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#second-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/cards_looses_lots.png");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height: 200px;
+        width: 500px;
+        background-size: 120%;
+        background-position: center;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#third-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/grade_cards.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 500px;
+        background-size: 120%;
+        background-position: center;
+        background-position-x: 45%;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#fourth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/coffrets_produits_scelles.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 500px;
+        background-size: 140%;
+        background-position: center;
+        font-size: 1.4em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#fiveth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/visuels-bundle-6-boosters-pokemon-foudre-noire-flamme-blanche.jpg.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 500px;
+        background-size: 140%;
+        background-position: center;
+        padding: 5%;
+        font-size: 1.4em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#sixth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/accesories.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 140%;
+        height: 200px;
+        width: 500px;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .div-section-others-tcg {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .div-section-others-tcg div {
+        border-radius: 50px;
+        padding-top: 5%;
+        width: 24%;
+    }
+
+    .div-section-others-tcg div * {
+        border-radius: 50px;
+    }
+
+    .search-bar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: #ffffff;
     }
 
     main {
-        margin-top: 50%;
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
         text-align: center;
-        color: white;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: #3b3b3b;
+        min-height: 73vh;
+        padding: 2em;
     }
 
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        background-color: #0F172A;
+        color: white;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 644px) and (min-width: 480px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+
     body {
-        background-color: rgb(24, 24, 24)
+        display: flex;
+        flex-direction: column;
+        font-family: "Baloo 2", sans-serif;
+        background-color: #F9FAFB;
+        color: #000;
+        overflow-x: hidden;
+    }
+
+    #news {
+        text-align: center;
+        background-color: #F9FAFB;
+        padding: 1em;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        background-color: #0F172A;
+        padding: 2%;
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .header-div-first-class-part-img {
+        padding: 0 1.2em 0;
+        padding-left: 2%;
+
+    }
+
+    .header-div-first-class-part-img img {
+        width: 75px;
+        height: auto;
+        border-radius: 120%;
+    }
+
+    /* search bar section for looking for an item */
+
+
+
+    .search-bar-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 22vh;
+        width: 100%;
+        background-image: url("./assets/connor-dickson-A1I8g8NccNg-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        color: #ffffff;
+        font-size: 3.5em;    
+        filter: opacity(0.8);
+    }
+
+
+    .search-bar-section strong {
+        font-family: "Edu QLD Hand", cursive;
+        padding-top: 4.5%;
+    }
+
+    #container-input-search {
+        display: flex;
+        width: 5em;
+        border-radius: 5%;
+        color: #000000;
+        font-size: 50%;
+        height: 1em;
+    }
+
+    /* section choices section navigation */
+
+    .nav-logo {
+        display: flex;
+        align-items: start;
+        padding-right: 2.5%;
+    }
+
+    .nav-logo img {
+        width: 1.3em;
+        height: 1.53em;
+        margin-left: 2em;
+    }
+
+    .nav-logo img:hover {
+        filter: brightness(0) saturate(100%) invert(72%) sepia(83%) saturate(749%) hue-rotate(4deg) brightness(102%) contrast(101%);
+        transition: filter 0.3s ease-in
+    }
+
+    .first-section-theme-list-choices {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 3em;
+        gap: 2em;
+    }
+
+    .first-section-theme-list-choices * {
+        border-radius: 50px;
+    }
+
+
+    .first-section-theme-list-choices div#first-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/pokemon_cards.png");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height: 200px;
+        background-size: 140%;
+        background-position: center;
+        width: 500px;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#second-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/cards_looses_lots.png");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height: 200px;
+        width: 500px;
+        background-size: 120%;
+        background-position: center;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#third-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/grade_cards.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 500px;
+        background-size: 120%;
+        background-position: center;
+        background-position-x: 45%;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#fourth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/coffrets_produits_scelles.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 500px;
+        background-size: 140%;
+        background-position: center;
+        font-size: 1.4em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#fiveth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/visuels-bundle-6-boosters-pokemon-foudre-noire-flamme-blanche.jpg.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 500px;
+        background-size: 140%;
+        background-position: center;
+        padding: 5%;
+        font-size: 1.4em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#sixth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/accesories.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 140%;
+        height: 200px;
+        width: 500px;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .div-section-others-tcg {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .div-section-others-tcg div {
+        border-radius: 50px;
+        padding-top: 5%;
+        width: 24%;
+    }
+
+    .div-section-others-tcg div * {
+        border-radius: 50px;
+    }
+
+    .search-bar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: #ffffff;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        text-align: center;
+        background-color: #3b3b3b;
+        min-height: 73vh;
+        padding: 2em;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        background-color: #0F172A;
+        color: white;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 389px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: "Baloo 2", sans-serif;
+        background-color: #F9FAFB;
+        color: #000;
+        overflow-x: hidden;
+    }
+
+    #news {
+        text-align: center;
+        background-color: #F9FAFB;
+        padding: 1em;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        background-color: #0F172A;
+        padding: 2%;
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .header-div-first-class-part-img {
+        padding: 0 1.2em 0;
+        padding-left: 2%;
+
+    }
+
+    .header-div-first-class-part-img img {
+        width: 75px;
+        height: auto;
+        border-radius: 120%;
+    }
+
+    /* search bar section for looking for an item */
+
+
+
+    .search-bar-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 22vh;
+        width: 100%;
+        background-image: url("./assets/connor-dickson-A1I8g8NccNg-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        color: #ffffff;
+        font-size: 3.5em;    
+        filter: opacity(0.8);
+    }
+
+
+    .search-bar-section strong {
+        font-family: "Edu QLD Hand", cursive;
+        padding-top: 4.5%;
+    }
+
+    #container-input-search {
+        display: flex;
+        width: 5em;
+        border-radius: 5%;
+        color: #000000;
+        font-size: 50%;
+        height: 1em;
+    }
+
+    /* section choices section navigation */
+
+    .nav-logo {
+        display: flex;
+        align-items: start;
+        padding-right: 2.5%;
+    }
+
+    .nav-logo img {
+        width: 1.3em;
+        height: 1.53em;
+        margin-left: 2em;
+    }
+
+    .nav-logo img:hover {
+        filter: brightness(0) saturate(100%) invert(72%) sepia(83%) saturate(749%) hue-rotate(4deg) brightness(102%) contrast(101%);
+        transition: filter 0.3s ease-in
+    }
+
+    .first-section-theme-list-choices {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 3em;
+        gap: 2em;
+    }
+
+    .first-section-theme-list-choices * {
+        border-radius: 50px;
+    }
+
+
+    .first-section-theme-list-choices div#first-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/pokemon_cards.png");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height: 200px;
+        background-size: 140%;
+        background-position: center;
+        width: 500px;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#second-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/cards_looses_lots.png");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height: 200px;
+        width: 500px;
+        background-size: 120%;
+        background-position: center;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#third-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/grade_cards.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 500px;
+        background-size: 120%;
+        background-position: center;
+        background-position-x: 45%;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#fourth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/coffrets_produits_scelles.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 500px;
+        background-size: 140%;
+        background-position: center;
+        font-size: 1.4em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#fiveth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/visuels-bundle-6-boosters-pokemon-foudre-noire-flamme-blanche.jpg.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 500px;
+        background-size: 140%;
+        background-position: center;
+        padding: 5%;
+        font-size: 1.4em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#sixth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/accesories.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 140%;
+        height: 200px;
+        width: 500px;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .div-section-others-tcg {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .div-section-others-tcg div {
+        border-radius: 50px;
+        padding-top: 5%;
+        width: 24%;
+    }
+
+    .div-section-others-tcg div * {
+        border-radius: 50px;
+    }
+
+    .search-bar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: #ffffff;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        text-align: center;
+        background-color: #3b3b3b;
+        min-height: 73vh;
+        padding: 2em;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        background-color: #0F172A;
+        color: white;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 388px) and (min-width: 254px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: "Baloo 2", sans-serif;
+        background-color: #F9FAFB;
+        color: #000;
+        overflow-x: hidden;
+    }
+
+    #news {
+        text-align: center;
+        background-color: #F9FAFB;
+        padding: 1em;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        background-color: #0F172A;
+        padding: 2%;
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .header-div-first-class-part-img {
+        padding: 0 1.2em 0;
+        padding-left: 2%;
+
+    }
+
+    .header-div-first-class-part-img img {
+        width: 75px;
+        height: auto;
+        border-radius: 120%;
+    }
+
+    /* search bar section for looking for an item */
+
+
+
+    .search-bar-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 22vh;
+        width: 100%;
+        background-image: url("./assets/connor-dickson-A1I8g8NccNg-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: start;
+        color: #ffffff;
+        font-size: 2em;    
+        filter: opacity(0.8);
+    }
+
+
+    .search-bar-section strong {
+        font-family: "Edu QLD Hand", cursive;
+        padding-top: 4.5%;
+    }
+
+    #container-input-search {
+        display: flex;
+        width: 5em;
+        border-radius: 5%;
+        color: #000000;
+        font-size: 50%;
+        height: 1em;
+    }
+
+    /* section choices section navigation */
+
+    .nav-logo {
+        display: flex;
+        align-items: start;
+        padding-right: 2.5%;
+    }
+
+    .nav-logo img {
+        width: 1.3em;
+        height: 1.53em;
+        margin-left: 2em;
+    }
+
+    .nav-logo img:hover {
+        filter: brightness(0) saturate(100%) invert(72%) sepia(83%) saturate(749%) hue-rotate(4deg) brightness(102%) contrast(101%);
+        transition: filter 0.3s ease-in
+    }
+
+    .first-section-theme-list-choices {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 3em;
+        gap: 2em;
+    }
+
+    .first-section-theme-list-choices * {
+        border-radius: 50px;
+    }
+
+
+    .first-section-theme-list-choices div#first-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/pokemon_cards.png");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height: 200px;
+        background-size: 140%;
+        background-position: center;
+        width: 500px;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#second-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/cards_looses_lots.png");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height: 200px;
+        width: 500px;
+        background-size: 120%;
+        background-position: center;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#third-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/grade_cards.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 500px;
+        background-size: 120%;
+        background-position: center;
+        background-position-x: 45%;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#fourth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/coffrets_produits_scelles.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 500px;
+        background-size: 140%;
+        background-position: center;
+        font-size: 1.4em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#fiveth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/visuels-bundle-6-boosters-pokemon-foudre-noire-flamme-blanche.jpg.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 500px;
+        background-size: 140%;
+        background-position: center;
+        padding: 5%;
+        font-size: 1.4em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .first-section-theme-list-choices div#sixth-div-choice-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./assets/accesories.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 140%;
+        height: 200px;
+        width: 500px;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.529);
+        background-blend-mode: darken;
+    }
+
+    .div-section-others-tcg {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .div-section-others-tcg div {
+        border-radius: 50px;
+        padding-top: 5%;
+        width: 24%;
+    }
+
+    .div-section-others-tcg div * {
+        border-radius: 50px;
+    }
+
+    .search-bar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: #ffffff;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        text-align: center;
+        background-color: #3b3b3b;
+        min-height: 73vh;
+        padding: 2em;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        background-color: #0F172A;
+        color: white;
+        font-size: 0.9rem;
     }
 }
