@@ -10,7 +10,7 @@ import YuGiOhTcgBannerContainer from "./assets/yu_gi-oh.png";
 import PokemonTcgBannerContainer from "./assets/pokemon.jpg";
 import "../app/javascript/main/main.js";
 import "../app/javascript/main/configs";
-import searchBar from "./assets/search-svgrepo-com.svg";
+import menuChoices from "../app/assets/lines-svgrepo-com.svg";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -36,6 +36,7 @@ export default function Page() {
                     <Image src={SearchItems} width={24} height={24} alt="search something"/>
                     <Image src={AccountProfile} width={24} height={24} alt="login or sign up"/>
                     <Image src={BuyItems} width={24} height={24}  alt="your shopping cart"/>
+                    <Image className="menu-hamburger-nav-container" src={menuChoices} width={24} height={24} alt=""></Image>
                 </div>
             </nav>
 
@@ -43,6 +44,10 @@ export default function Page() {
 
     <section className="search-bar-section">
         <strong>Pokesnipe</strong>
+        <form>
+            <input type="text" className="text-container" placeholder="Recherchez"></input>        
+            <Image className="search-bar-items-logo-main" src={SearchItems} width={24} alt=""></Image>
+        </form>
     </section>
 
 
