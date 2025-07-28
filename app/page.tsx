@@ -1,36 +1,40 @@
-import '../app/globals.css';
+import '../app/style/main/globals.css';
 import { Inter } from 'next/font/google';
-import logo from './assets/output-removebg-preview.png'
+import logo from '../public/output-removebg-preview.png';
 import Image from 'next/image';
-import SearchItems from "./assets/search-svgrepo-com.svg"
-import AccountProfile from "./assets/account-svgrepo-com (1).svg"
-import BuyItems from "./assets/buy-svgrepo-com.svg";
-import OnePieaceTcgBannerContainer from "./assets/one_pice_tcg.jpg"
-import YuGiOhTcgBannerContainer from "./assets/yu_gi-oh.png";
-import PokemonTcgBannerContainer from "./assets/pokemon.jpg";
-import "../app/javascript/main/main.js";
+import SearchItems from "../public/search-svgrepo-com.svg";
+import AccountProfile from "../public/account-svgrepo-com (1).svg";
+import BuyItems from "../public/buy-svgrepo-com.svg";
+import OnePieaceTcgBannerContainer from "../public/one_pice_tcg.jpg";
+import YuGiOhTcgBannerContainer from "../public/yu_gi-oh.png";
+import PokemonTcgBannerContainer from "../public/pokemon_banner.png";
+import "./javascript/main/main.js";
 import "../app/javascript/main/configs";
-import menuChoices from "../app/assets/lines-svgrepo-com.svg";
+import menuChoices from "../public/lines.svg";
+import "./javascript/main/main.js";
+// import { useEffect } from 'react';
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 });
 
-export default function Page() {
+export default function Page() { 
+
   return (
             <div>
-        <div id="news">Annonces ou Informations sur la vente en ligne !</div>
+        <div className="p-6" id="news">Annonces ou Informations sur la vente en ligne !</div>
     <header>
-        <div className="header-div-first-class-part-img">
+        {/* <div className="header-div-first-class-part-img">
             <Image src={logo} alt="" />
-        </div>
+        </div> */}
 
             <nav>
                 <ul>
-                    <li><a href="#d">Accueil</a></li>
-                    <li><a href="#d">Nos services</a></li>
-                    <li><a href="#d">À propos</a></li>
+                    <li><a href="https://pokesnipe.vercel.app"><Image className="nav-part-img-container" src={logo} alt="" /></a></li>
+                    <li><a className="link-nav-section" href="#d">Accueil</a></li>
+                    <li><a className="link-nav-section" href="#d">Nos services</a></li>
+                    <li><a className="link-nav-section" href="#d">À propos</a></li>
                 </ul>
                 <div className="nav-logo">
                     <Image src={SearchItems} width={24} height={24} alt="search something"/>
@@ -52,13 +56,14 @@ export default function Page() {
 
 
     <section className="first-section-theme-list-choices">
-        <div id="first-div-choice-box"><p>Cartes Pokémon</p></div>
-        <div id="second-div-choice-box">Loose & Lots</div>
-        <div id="third-div-choice-box">Cartes Gradées</div>
-        <div id="fourth-div-choice-box">Coffrets & Produits scellés</div>
-        <div id="fiveth-div-choice-box">Séries & Extensions</div>
-        <div id="sixth-div-choice-box">Accessoires</div>
-
+        <div className="navigation-container-flex">
+            <a id="first-div-choice-box" href="/cards_second_path/page.tsx">Carte Pokémon</a>
+            <a id="second-div-choice-box" href="#d"><p className="name-domain-page">Loose & Lots</p></a>
+            <a id="third-div-choice-box" href="#d"><p className="name-domain-page">Cartes Gradées</p></a>
+            <a id="fourth-div-choice-box" href="#d"><p className="name-domain-page">Coffrets & Produits scellés</p></a>
+            <a id="fiveth-div-choice-box" href="#d"><p className="name-domain-page">Séries & Extensions</p></a>
+            <a id="sixth-div-choice-box" href="#d"><p className="name-domain-page">Accessoires</p></a>
+        </div>
         <div className="div-section-others-tcg">
             <div>
             <Image src={OnePieaceTcgBannerContainer} className="one-piece" alt="One Pieace container TCG"/>
@@ -91,11 +96,3 @@ export default function Page() {
     </div>
   );
 }
-
-
-
-// export default function Home() {
-//   return (
-
-//   );
-// }
