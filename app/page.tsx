@@ -22,7 +22,7 @@ const inter = Inter({
 export default function Page() { 
 
   return (
-            <div>
+            <div id="body">
         <div className="p-6" id="news">Annonces ou Informations sur la vente en ligne !</div>
     <header>
         {/* <div className="header-div-first-class-part-img">
@@ -66,21 +66,21 @@ export default function Page() {
         </div>
         <div className="div-section-others-tcg">
             <div>
-            <Image src={OnePieaceTcgBannerContainer} className="one-piece" alt="One Pieace container TCG"/>
+            <Image src={OnePieaceTcgBannerContainer} className="one-piece" width={200} alt="One Pieace container TCG"/>
             </div>
             <div>
-            <Image src={PokemonTcgBannerContainer} className="pokemon" alt="Pokemon container TCG"/>
+            <Image src={PokemonTcgBannerContainer} className="pokemon" width={200} alt="Pokemon container TCG"/>
             </div>
             <div>
-            <Image src={YuGiOhTcgBannerContainer} className="yu-gi-oh" alt="Yu-Gi-Oh container TCG"/>
+            <Image src={YuGiOhTcgBannerContainer} className="yu-gi-oh" width={200} alt="Yu-Gi-Oh container TCG"/>
             </div>
        </div>
     </section>
 
     <main>
-        <h1>MAIN CONTENT SOON APPEARS INTO PRESENTATION AND FEATURES</h1>
+        <h1>Les articles arriveront prochainement !</h1>
         <div className="informations">
-            <h2>CONTENT WILL APPEAR SOON THANK YOU FOR YOUR UNDERSTANDING DEAR CLIENT. THANK YOU FOR YOUR LOYALITY</h2>
+            <h2>Contenue container d'article de vente <code>.map()</code> ou <code>forEach()</code></h2>
         </div>
     </main>
 

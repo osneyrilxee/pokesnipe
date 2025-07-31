@@ -2,6 +2,7 @@
 
 @import "tailwindcss";
 
+
 :root {
     font-family: var(--font-inter), sans-serif;
 }
@@ -12,8 +13,7 @@
     --foreground: #171717;
 }
 
-@media screen and (max-width: 2560px) {
-    * {
+* {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
@@ -171,9 +171,11 @@
 
     .first-section-theme-list-choices {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
-        padding: 5em;
+        align-items: center;
+        padding: 10em;
         background-color: rgb(249, 252, 255);
     }
 
@@ -258,12 +260,11 @@
         align-items: center;
         background-image: url("/visuels-bundle-6-boosters-pokemon-foudre-noire-flamme-blanche.jpg.png");
         background-repeat: no-repeat;
-        height: 200px;
         width: 500px;
         background-size: 140%;
         background-position: center;
-        padding: 5%;
         font-size: 1.4em;
+        height: 200px;
         color: white;
         font-weight: 600;
         background-color: rgba(0, 0, 0, 0.529);
@@ -291,24 +292,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 5em;
-    }
-
-    .div-section-others-tcg div {
+        flex-wrap: wrap;
         border-radius: 50px;
-        padding-top: 4%;
-        width: 10%;
-    }
-
-    .div-section-others-tcg div * {
-        border-radius: 50px;
-    }
-
-    .search-bar-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
+        padding-top: 5em;
+        width: auto;
+        gap: 4em;
     }
 
     main {
@@ -321,6 +309,17 @@
         padding: 2em;
     }
 
+    main h1 {
+        font-size: 2em;
+        padding-bottom: 2%;
+    }
+
+    main code {
+        background-color: rgb(15, 15, 15);
+        border-radius: 5px;
+        padding: 5px;
+    }
+
     footer {
         display: flex;
         justify-content: center;
@@ -329,11 +328,10 @@
         color: white;
         font-size: 0.9rem;
     }
-}
 
 @media screen and (max-width: 1064px) {
     .search-bar-section {
-        min-height: 44vh;
+        min-height: 43vh;
         background-size: 100%;
         background-position-y: 0;
     }
@@ -341,6 +339,40 @@
     .first-section-theme-list-choices a#first-div-choice-box {
         padding: 0;
     }
+}
+
+@media screen and (max-width: 1047px) {
+
+    .div-section-others-tcg {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .first-section-theme-list-choices div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-section-others-tcg * {
+        display: none;
+    }
+
+    .first-section-theme-list-choices {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .first-section-theme-list-choices div {
+        width: 500px;
+    }
+
+    .first-section-theme-list-choices .div-section-others-tcg {
+        width: 0;
+    }
+
 }
 
 
@@ -362,18 +394,85 @@
         padding-right: 3.5em;
     }
 
+    .search-bar-section {
+        min-height: 36vh;
+        padding: 0 15px;
+    }
+
+    .search-bar-section strong {
+        font-size: 0.8em;
+    }
+
+    input[type="text"] {
+        width: 9em;
+    }
+
+    .search-bar-items-logo-main {
+        right: 85%;
+    }
     
     .menu-hamburger-nav-container {
         display: block;
     }
+
+    .first-section-theme-list-choices {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+        padding: 5em 0 5em 0;
+    }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 625px) {
+
+    .nav-part-img-container {
+        width: 70px;
+    }
 
     .search-bar-section {
-        min-height: 37vh;
-        background-size: 150%;
-        background-position-y: 0;
+        min-height: 28vh;
+        font-size: 4em;
+        text-align: center;
+    }
+
+    
+    .search-bar-section strong {
+        font-size: 1em;
+    }
+
+
+    input[type="text"] {
+        width: 11em;
+    }
+
+    .search-bar-items-logo-main {
+        right: 87%;
+    }
+    
+
+    .first-section-theme-list-choices {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5em;
+    }
+
+    .first-section-theme-list-choices div {
+        width: 130%;
+    }
+    
+
+}
+
+/* @media screen and (max-width: 480px) {
+
+    #body {
+        min-width: 50%;
+    }
+
+    .search-bar-section {
+        min-height: 27vh;
     }
 
     .search-bar-section strong {
@@ -389,5 +488,6 @@
         display: flex;
         padding: 3em 0;
         margin: 0;
+        padding: 0;
     }
-}
+} */
