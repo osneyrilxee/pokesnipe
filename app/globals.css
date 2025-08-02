@@ -96,7 +96,7 @@
     }
 
     input[type=text] {
-        width: 80%;
+        width: 75%;
         color: #000000;
         background-color: #ffffff;
         filter: opacity(0.8);
@@ -114,7 +114,7 @@
 
     .search-bar-items-logo-main {
         position: relative;
-        right: 75%;
+        right: 70%;
         filter: brightness(0%);
     }
 
@@ -183,109 +183,65 @@
         border-radius: 50px;
     }
 
-
-    .first-section-theme-list-choices a#first-div-choice-box {
-        background-image: url("/pokemon_cards.png");
+    .choices-box {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 140%;
-        height: 200px;
-        width: 500px;
-        font-size: 1.5em;
         color: white;
+        font-size: 1.5em;
         font-weight: 600;
-        background-color: rgba(0, 0, 0, 0.529);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #0000008a;
         background-blend-mode: darken;
     }
 
+
+    .first-section-theme-list-choices a#first-div-choice-box {
+        background-image: url("/pokemon_cards.png");
+        background-size: 140%;
+        height: 200px;
+        width: 500px;
+    }
+
     .first-section-theme-list-choices a#second-div-choice-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-image: url("/cards_looses_lots.png");
-        background-repeat: no-repeat;
         object-fit: cover;
         height: 200px;
         width: 500px;
         background-size: 120%;
-        background-position: center;
-        font-size: 1.5em;
-        color: white;
-        font-weight: 600;
-        background-color: rgba(0, 0, 0, 0.529);
-        background-blend-mode: darken;
     }
 
     .first-section-theme-list-choices a#third-div-choice-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-image: url("/grade_cards.png");
-        background-repeat: no-repeat;
         height: 200px;
         width: 500px;
         background-size: 120%;
-        background-position: center;
         background-position-x: 45%;
-        font-size: 1.5em;
-        color: white;
-        font-weight: 600;
-        background-color: rgba(0, 0, 0, 0.529);
-        background-blend-mode: darken;
     }
 
     .first-section-theme-list-choices a#fourth-div-choice-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-image: url("/coffrets_produits_scelles.png");
-        background-repeat: no-repeat;
         height: 200px;
         width: 500px;
         background-size: 140%;
-        background-position: center;
         font-size: 1.4em;
-        color: white;
-        font-weight: 600;
-        background-color: rgba(0, 0, 0, 0.529);
-        background-blend-mode: darken;
     }
 
     .first-section-theme-list-choices a#fiveth-div-choice-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-image: url("/visuels-bundle-6-boosters-pokemon-foudre-noire-flamme-blanche.jpg.png");
-        background-repeat: no-repeat;
         width: 500px;
         background-size: 140%;
-        background-position: center;
         font-size: 1.4em;
         height: 200px;
-        color: white;
-        font-weight: 600;
-        background-color: rgba(0, 0, 0, 0.529);
-        background-blend-mode: darken;
     }
 
     .first-section-theme-list-choices a#sixth-div-choice-box {
         background-image: url("/accesories.png");
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-repeat: no-repeat;
-        background-position: center;
         background-size: 140%;
         height: 200px;
         width: 500px;
         font-size: 1.5em;
-        color: white;
-        font-weight: 600;
-        background-color: rgba(0, 0, 0, 0.529);
-        background-blend-mode: darken;
     }
 
     .div-section-others-tcg {
@@ -343,6 +299,17 @@
 
 @media screen and (max-width: 1047px) {
 
+    
+    input[type="text"] {
+        width: 10em;
+        font-size: 0.4em;
+    }
+
+    .search-bar-items-logo-main {
+        right: 88%;
+        width: 25px;
+    }
+
     .div-section-others-tcg {
         display: flex;
         flex-wrap: nowrap;
@@ -369,7 +336,7 @@
         width: 500px;
     }
 
-    .first-section-theme-list-choices .div-section-others-tcg {
+    .div-section-others-tcg {
         width: 0;
     }
 
@@ -404,11 +371,13 @@
     }
 
     input[type="text"] {
-        width: 9em;
+        width: 9.5em;
+        font-size: 0.3em;
     }
 
     .search-bar-items-logo-main {
-        right: 85%;
+        right: 88%;
+        width: 20px;
     }
     
     .menu-hamburger-nav-container {
@@ -421,6 +390,10 @@
         align-content: center;
         margin: 0;
         padding: 5em 0 5em 0;
+    }
+
+    .div-section-others-tcg {
+        padding: 0;
     }
 }
 
@@ -442,12 +415,15 @@
     }
 
 
+    
     input[type="text"] {
-        width: 11em;
+        width: 10em;
+        font-size: 0.4em;
     }
 
     .search-bar-items-logo-main {
-        right: 87%;
+        right: 86%;
+        width: 20px;
     }
     
 
@@ -465,29 +441,39 @@
 
 }
 
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
     #body {
-        min-width: 50%;
-    }
-
-    .search-bar-section {
-        min-height: 27vh;
+        width: calc(100% - auto);
+        padding: 0;
+        margin: 0;
     }
 
     .search-bar-section strong {
         font-size: 0.7em;
+        text-align: center;
     }
 
-    form {
-        width: 5em;
-        font-size: 0.7em;
+    input[type="text"] {
+        width: 8em;
+        font-size: 0.4em;
+    }
+
+    .search-bar-items-logo-main {
+        right: 85%;
+        width: 20px;
     }
     
-    .first-section-theme-list-choices {
+
+    nav {
+        width: calc(100% - 25px);
+        padding: 1em;
         display: flex;
-        padding: 3em 0;
-        margin: 0;
-        padding: 0;
+        justify-content: space-around;
     }
-} */
+
+    .nav-part-img-container {
+        margin-left: 0em;
+    }
+
+}

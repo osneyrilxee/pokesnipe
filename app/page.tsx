@@ -25,9 +25,6 @@ export default function Page() {
             <div id="body">
         <div className="p-6" id="news">Annonces ou Informations sur la vente en ligne !</div>
     <header>
-        {/* <div className="header-div-first-class-part-img">
-            <Image src={logo} alt="" />
-        </div> */}
 
             <nav>
                 <ul>
@@ -57,12 +54,12 @@ export default function Page() {
 
     <section className="first-section-theme-list-choices">
         <div className="navigation-container-flex">
-            <a id="first-div-choice-box" href="/cards_second_path/page.tsx">Carte Pokémon</a>
-            <a id="second-div-choice-box" href="#d"><p className="name-domain-page">Loose & Lots</p></a>
-            <a id="third-div-choice-box" href="#d"><p className="name-domain-page">Cartes Gradées</p></a>
-            <a id="fourth-div-choice-box" href="#d"><p className="name-domain-page">Coffrets & Produits scellés</p></a>
-            <a id="fiveth-div-choice-box" href="#d"><p className="name-domain-page">Séries & Extensions</p></a>
-            <a id="sixth-div-choice-box" href="#d"><p className="name-domain-page">Accessoires</p></a>
+            <a id="first-div-choice-box" className="choices-box" href="/cards_second_path/page.tsx">Carte Pokémon</a>
+            <a id="second-div-choice-box" className="choices-box" href="#d"><p className="name-domain-page">Loose & Lots</p></a>
+            <a id="third-div-choice-box" className="choices-box" href="#d"><p className="name-domain-page">Cartes Gradées</p></a>
+            <a id="fourth-div-choice-box" className="choices-box" href="#d"><p className="name-domain-page">Coffrets & Produits scellés</p></a>
+            <a id="fiveth-div-choice-box" className="choices-box" href="#d"><p className="name-domain-page">Séries & Extensions</p></a>
+            <a id="sixth-div-choice-box" className="choices-box" href="#d"><p className="name-domain-page">Accessoires</p></a>
         </div>
         <div className="div-section-others-tcg">
             <div>
