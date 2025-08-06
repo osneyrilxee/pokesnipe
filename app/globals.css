@@ -123,7 +123,6 @@
     .search-bar-section {
         display: flex;
         flex-direction: column;
-        justify-content: start;
         align-items: center;
         min-height: 60vh;
         background-image: url("/hiros-lee-b-B5KsvhwuQ-unsplash.jpg");
