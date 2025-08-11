@@ -1,3 +1,15 @@
+<h1>Project details</h1>
+
+This project uses Next.js for compatibility with API.
+The main goal of this project is to make a creative website with modern features and a perfect user accessibility.
+
+This website will need some security parameters against DDoS attacks.
+
+*update soon*
+
+
+<h1>Demo</h1>
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +46,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
