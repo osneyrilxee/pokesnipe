@@ -8,7 +8,6 @@ import BuyItems from "../public/buy-svgrepo-com.svg";
 import OnePieaceTcgBannerContainer from "../public/one_pice_tcg.jpg";
 import YuGiOhTcgBannerContainer from "../public/yu_gi-oh.png";
 import PokemonTcgBannerContainer from "../public/pokemon_banner.png";
-import "./javascript/main/main.js";
 import "../app/javascript/main/configs";
 import menuChoices from "../public/lines.svg";
 import "./javascript/main/main.js";
